@@ -3155,3 +3155,32 @@ button:focus-visible {
     font-size: 0.94rem;
   }
 }
+
+/* Parent feedback, drawn from the supplied family stories. */
+.parent-feedback { padding: var(--section-padding); background: var(--bg-dark); }
+.parent-feedback h2 { text-align: center; }
+.parent-feedback-eyebrow { color: var(--accent-blue); font-weight: 700; text-align: center; margin-bottom: .6rem; }
+.parent-feedback-intro { max-width: 42rem; margin: 1rem auto .75rem; text-align: center; color: var(--text-secondary); }
+.parent-feedback-note { max-width: 44rem; margin: 0 auto 2.5rem; text-align: center; font-size: .875rem; color: var(--text-secondary); }
+.parent-stories { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+.parent-story { grid-column: span 2; border: 1px solid var(--border-light); border-radius: var(--radius); overflow: hidden; background: var(--bg-card); box-shadow: var(--shadow-card); }
+.parent-story:nth-child(n+4) { grid-column: span 3; }
+.parent-story-photo { width: 100%; height: 15rem; object-fit: contain; background: #e9eeec; }
+.parent-story-body { padding: 1.5rem; }
+.parent-story-name { font-size: .9375rem; font-weight: 700; color: var(--accent-blue); margin-bottom: .4rem; }
+.parent-story h3 { font-size: 1.25rem; line-height: 1.5; margin: 0 0 1rem; color: var(--text-primary); }
+.parent-story-body > p:not(.parent-story-name), .parent-story-details p { font-size: 1rem; line-height: 1.85; color: var(--text-secondary); }
+.parent-story-details { border-top: 1px solid var(--border-light); margin-top: 1.25rem; padding-top: .75rem; }
+.parent-story-details summary { cursor: pointer; padding: .4rem 0; color: var(--accent-blue); font-size: 1rem; font-weight: 600; }
+.parent-story-details summary:focus-visible { outline: 2px solid var(--accent-blue); outline-offset: 4px; border-radius: 3px; }
+.parent-story-details p { margin-top: .8rem; }
+.parent-story-sr { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+@media (max-width: 1000px) {
+  .parent-story, .parent-story:nth-child(n+4) { grid-column: span 3; }
+  .parent-story:last-child { grid-column: 2 / span 4; }
+}
+@media (max-width: 640px) {
+  .parent-stories { grid-template-columns: minmax(0, 1fr); }
+  .parent-story, .parent-story:nth-child(n+4), .parent-story:last-child { grid-column: auto; }
+  .parent-story-body { padding: 1.25rem; }
+}
