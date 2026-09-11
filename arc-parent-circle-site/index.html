@@ -827,10 +827,10 @@
 
     <div class="section-fade section-fade--reverse" aria-hidden="true"></div>
 
-    <!-- ======== 8. 報名資訊 ======== -->
+    <!-- ======== 8. 我想了解更多 ======== -->
     <section id="signup" class="signup">
       <div class="signup-wrap">
-        <h2 class="reveal">報名資訊</h2>
+        <h2 class="reveal">我想了解更多</h2>
         <p class="reveal" style="text-align:center;color:var(--text-secondary);font-size:0.95rem;">
           滿六人開圈
         </p>
@@ -838,55 +838,18 @@
           開課日期：【開課日期待定】｜地點：【上課地點待定】
         </p>
 
-        <!-- Registration Form -->
-        <div class="reg-form-wrap reveal" id="reg-form-wrap">
-          <form
-            id="regForm"
-            class="reg-form"
-            action="https://docs.google.com/forms/d/e/1FAIpQLSd_085Q17XNlKE9DCtTrHa1VW-FQ_ebc5EmSFZKWIRYDSp3dw/viewform"
-            method="get"
+        <div class="reveal" style="text-align:center;margin-top:2rem;">
+          <a
+            class="btn-primary"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd_085Q17XNlKE9DCtTrHa1VW-FQ_ebc5EmSFZKWIRYDSp3dw/viewform"
             target="_blank"
-            novalidate
+            rel="noopener noreferrer"
           >
-            <div class="form-row">
-              <div class="form-group">
-                <label for="parentName">家長姓名 <span class="req">*</span></label>
-                <input type="text" id="parentName" name="parentName" required />
-              </div>
-              <div class="form-group">
-                <label for="phone">聯絡電話 <span class="req">*</span></label>
-                <input type="tel" id="phone" name="phone" required />
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="childAge">孩子年齡或年級 <span class="req">*</span></label>
-                <input type="text" id="childAge" name="childAge" required />
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="concern">最想談的困擾（選填）</label>
-              <textarea id="concern" name="concern" rows="3"></textarea>
-            </div>
-
-            <button type="submit" class="btn-primary btn-submit" id="submitBtn">
-              送出報名
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M5 12h14M13 5l7 7-7 7" />
-              </svg>
-            </button>
-          </form>
-
-          <div id="formSuccess" class="form-success" style="display: none">
-            <svg viewBox="0 0 48 48" fill="none" stroke="var(--accent-green)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="24" cy="24" r="20" />
-              <path d="M14 24l7 7 13-13" />
+            填寫報名表單
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M13 5l7 7-7 7" />
             </svg>
-            <h3>報名成功</h3>
-            <p>我們會盡快與您聯繫，確認開課相關細節。</p>
-          </div>
+          </a>
         </div>
       </div>
     </section>
